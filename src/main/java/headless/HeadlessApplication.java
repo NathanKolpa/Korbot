@@ -40,6 +40,6 @@ public class HeadlessApplication
 
 	private static DiscordBot getDiscordBot()
 	{
-		return new DiscordBot("NTQyNjM2NzQ0Mzc4NDE3MTUy.XnjgBw.pG9rUcKroZhL9g-6XS3E6WMHG9c");
+		return new DiscordBot("NTQyNjM2NzQ0Mzc4NDE3MTUy.Xnk2Kg.ZfDMzCkKSOcqv-LZ7lAyGo6TFmA");
 	}
 }
