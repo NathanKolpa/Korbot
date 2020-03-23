@@ -1,13 +1,11 @@
 package lib.core.commands.router.route;
 
-import com.sun.deploy.util.ArrayUtil;
 import lib.core.commands.input.InputCommand;
 import lib.core.commands.template.Command;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class RouteList implements CommandRoute
