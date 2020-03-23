@@ -20,6 +20,10 @@
         </plugins>
     </build>
 
+    <properties>
+        <exec.mainClass>headless.HeadlessApplication</exec.mainClass>
+    </properties>
+
     <repositories>
         <repository>
             <id>jcenter</id>
