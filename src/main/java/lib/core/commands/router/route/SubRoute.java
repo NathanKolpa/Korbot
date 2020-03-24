@@ -4,12 +4,12 @@ import lib.core.commands.input.InputArgument;
 import lib.core.commands.input.InputCommand;
 import lib.core.commands.template.Command;
 
-public class RecursiveRoute implements CommandRoute
+public class SubRoute implements CommandRoute
 {
 	private String segment;
 	private CommandRoute child;
 
-	public RecursiveRoute(String segment, CommandRoute child)
+	public SubRoute(String segment, CommandRoute child)
 	{
 		this.segment = segment;
 		this.child = child;

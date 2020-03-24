@@ -25,10 +25,7 @@ public class Command
 
 	public boolean isValid(InputCommand input)
 	{
-		if (!matches(input))
-			return false;
-
-		for (int i = 0; i < input.getArguments().size() - 1; i++)
+		for (int i = 0; i < arguments.size() - 1; i++)
 		{
 			if (!arguments.get(i).isValid(input.getArguments().get(i + 1)))
 			{
