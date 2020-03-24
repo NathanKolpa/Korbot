@@ -18,6 +18,11 @@ public class DiscordBot implements EventDispatcher
 		builder = JDABuilder.createDefault(token);
 	}
 
+	public void setPresence(String value)
+	{
+		builder.setActivity(Activity.playing(value));
+	}
+
 	public void startAndWait() throws LoginException, InterruptedException
 	{
 		JDA jda = builder.build();

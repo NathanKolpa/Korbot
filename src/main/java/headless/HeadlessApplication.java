@@ -25,6 +25,8 @@ public class HeadlessApplication
 			Config config = new Config("./config.xml");
 
 			DiscordBot discordBot = new DiscordBot(config.getToken());
+			discordBot.setPresence(config.getPresence());
+
 			Bot bot = new Bot(discordBot, getCommands());
 
 			discordBot.startAndWait();
@@ -40,7 +42,7 @@ public class HeadlessApplication
 		CommandRouter commands = new CommandRouter();
 		Command help = new Command("help", "Shows the list of available commands", new HelpCommand(commands));
 
-		Command randomMeme = new Command("random meme", "Sends a random meme", new RandomMeme());
+		Command randomMeme = new Command("meme", "Sends a random meme", new RandomMeme());
 
 		RouteList commandList = new RouteList();
 		commandList.addRoute(new SingeRoute("help", help));
